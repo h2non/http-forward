@@ -19,8 +19,9 @@ suite('forward', function () {
 
     function proxy(req, res) {
       req.forward = { target: target }
-      forward(req, res, function (err) { 
+      forward(req, res, function (err, res) { 
         assert.equal(err, undefined)
+        assert.equal(res.statusCode, 200) 
       })
     }
   })
