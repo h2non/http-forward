@@ -26,8 +26,8 @@ module.exports = function httpForward(req, res, next) {
 }
 
 function cleanup(proxy) {
-  proxy.removeListener('error')
-  proxy.removeListener('proxyRes')
+  proxy.removeAllListeners('error')
+  proxy.removeAllListeners('proxyRes')
 }
 
 function once(fn) {
