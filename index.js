@@ -8,10 +8,7 @@ module.exports = function httpForward(req, res, next) {
   
   proxy.web(req, res, req.forward, error)
   proxy.once('proxyRes', function (proxyRes, req, res) {
-    if (proxyRes.statusCode >= 400) {
-      return error(null, proxyRes)
-    }
-    success()
+    success(proxyRes)
   })
 
   function error(err) {
