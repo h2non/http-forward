@@ -1,4 +1,5 @@
-# http-forward
+# http-forward [![Build Status](https://api.travis-ci.org/h2non/http-forward.svg?branch=master&style=flat)](https://travis-ci.org/h2non/http-forward) [![NPM](https://img.shields.io/npm/v/http-forward.svg)](https://www.npmjs.org/package/http-forward)
+
 
 Simple proxy forward for incoming HTTP requets. Built for node.js/io.js.
 
