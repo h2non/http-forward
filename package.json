@@ -1,7 +1,7 @@
 {
   "name": "http-forward",
   "description": "Simple proxy forward for incoming HTTP request",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "h2non/http-forward",
   "author": "Tomas Aparicio",
   "license": "MIT",
