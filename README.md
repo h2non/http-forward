@@ -1,18 +1,18 @@
-# request-forward
+# http-forward
 
 Simple proxy forward for incoming HTTP requets. Built for node.js/io.js.
 
 ## Installation
 
 ```
-npm install request-forward
+npm install http-forward
 ```
 
 ## API
 
 ```js
 const http = require('http')
-const forward = require('request-forward')
+const forward = require('http-forward')
 
 var server = http.createServer(function (req, res) {
   req.forward = { target: 'http://new.server.net' }
