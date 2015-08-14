@@ -1,0 +1,28 @@
+{
+  "name": "http-forward",
+  "description": "Simple proxy forward for incoming HTTP request",
+  "version": "0.1.0",
+  "repository": "h2non/http-forward",
+  "author": "Tomas Aparicio",
+  "license": "MIT",
+  "keywords": [
+    "forward",
+    "http",
+    "proxy",
+    "incoming",
+    "reverse"
+  ],
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --ui tdd test/*"
+  },
+  "dependencies": {
+    "http-proxy": "^1.11.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1"
+  }
+}
